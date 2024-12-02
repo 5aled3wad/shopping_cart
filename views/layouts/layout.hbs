@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link
+      rel="stylesheet"
+      href="/bower_components/bootstrap/dist/css/bootstrap.css"
+    />
+  </head>
+  <body>
+    {{!-- {{> header}} --}}
+    <div class="container">
+      {{{body}}}
+    </div>
+
+    {{! لازم نستخدم الملفين دول بنفس الترتيب عشان نعرف نشغل الدروب دون }}
+    <script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+    <script
+      src="/public/bower_components/bootstrap/dist/js/bootstrap.min.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+{{#each products}}
+  <div class="row">
+    {{#each this}}
+      <div class="col-sm-4">
+        <div class="card" style="width: 18rem;">
+          <div class="text-center">
+            <img src="{{this.imagePath}}" class="card-img-top" alt="..." />
+          </div>
+          <div class="card-body">
+            <h5 class="card-title">{{this.productName}}</h5>
+            <p class="card-text">SIM Card:{{this.productInformation.simCard}}<br
+              />
+              Screen:{{this.productInformation.screen}}<br />
+              RAM:
+              {{this.productInformation.ram}}<br />
+              Internal Memory:{{this.productInformation.internalMemory}}<br />
+              Rear Camera: Triple:{{this.productInformation.camera}}<br />
+              Color:
+              {{this.productInformation.color}}</p>
+            <div>
+              <div class="price" style="float:left">EGP {{this.price}}</div>
+              <a href="#" class="btn btn-success" style="float:right">Add To
+                Cart</a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    {{/each}}
+  </div>
+{{/each}}
